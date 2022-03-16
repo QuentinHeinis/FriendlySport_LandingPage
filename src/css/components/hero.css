@@ -1,0 +1,36 @@
+
+.hero__header {
+    position: relative;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+  
+
+.hero__img {
+    position: absolute;
+    top: 0; left: 0;
+    bottom: 0; right: 0;
+    z-index: -1;
+}
+  
+.hero__title{
+    font-size: 64px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    margin-left:50px;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+
+
+.hero__title .hero__title--line strong{
+    color: var(--brand-orange);
+}

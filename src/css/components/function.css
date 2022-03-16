@@ -1,0 +1,106 @@
+.function1, .function2, .function3{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dotted-design{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    left: -45px;
+    top: 50%;
+    transform: translateY(-50%);   
+}
+
+.dotted__lign{
+    display: flex;
+    gap: 10px;
+}
+
+.dot{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    display: block;
+}
+
+.function1 .dot{
+    background-color: white;
+}
+
+.function__Number{
+    font-size: 144px;
+    font-family: 'Staatliches', cursive;
+    position: absolute;
+    margin: 0;
+    right: 5%;
+    top: 10%;
+    
+
+}
+.function__Number::before{
+    
+    content: '1.';
+    color: #828282;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: -1;
+}
+.function__content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.function__content .function__txt{
+    width: 35vw;
+}
+.function__demo img{
+    max-width: 35vw;
+    height: auto;
+    max-height: 80vh;
+}
+
+.function2 .dot{
+    background-color: var(--brand-rose);
+}
+
+.function2 .dotted-design{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    right: -35px;
+    left: auto;
+    width: fit-content;
+    top: 50%;
+    transform: translateY(-50%);   
+}
+.function2 .dotted__lign{
+    flex-direction: row-reverse;
+}
+.function2 .function__Number{
+    right: auto;
+    left: 5%;
+    top: 10%;
+    color: white;
+
+}
+.function2 .function__Number::before{
+    color: var(--brand-rose);
+    content: '2.';
+}
+
+.function3 .function__Number::before{
+    content: '3.';
+    color: var(--brand-orange);
+}
+
+
+.function3 .dot{
+    background-color: var(--brand-orange);
+}

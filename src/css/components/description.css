@@ -1,0 +1,39 @@
+.product__description{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.productimg{
+    max-width: 40vw;
+    height: auto;
+    max-height: 80vh;
+}
+
+.description__txt{
+    width: 30vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.description__txt--btn{
+    display: flex;
+    justify-content: space-around;
+}
+
+.description__button{
+    text-decoration: none;
+    color: var(--gray-black);
+    background-color: white;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-family: 'Bebas neue', cursive;
+}
+
+.description__title{
+    text-align: center;
+}

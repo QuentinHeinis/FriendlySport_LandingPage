@@ -1,0 +1,56 @@
+.header{
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.header__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.header__link{
+    color: white;
+    text-decoration: none;
+
+}
+.header__start, .header__end{
+    position: relative;
+}
+.header__logo{
+    height: 60px;
+    position: relative;
+}
+
+.header__list .list__component{
+    font-family: 'Mulish', sans-serif;
+}
+
+.header__list .list__component:nth-child(4) .header__link, .header__list .list__component:nth-child(5) .header__link{
+    font-family: 'Staatliches', cursive;
+    padding: 12px 38px;
+    border-radius: 30px;
+    
+    border: solid 2px white;
+    
+}
+.header__list .list__component:nth-child(4) .header__link{
+    position: relative;
+}
+
+.header__list .list__component:nth-child(5) .header__link{
+    background-color: white;
+    color: black;
+}
+
