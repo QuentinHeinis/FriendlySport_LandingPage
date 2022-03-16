@@ -68,6 +68,9 @@
 .function2 .dot{
     background-color: var(--brand-rose);
 }
+.function2 .function__txt{
+    text-align: right;
+}
 
 .function2 .dotted-design{
     display: flex;
