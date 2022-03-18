@@ -1,6 +1,5 @@
 .abonnement{
-    height: 100vh;
-    overflow: hidden;
+    margin-bottom: 7vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -20,10 +19,11 @@
     gap: 10vw;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .freemium{
-    width: 30vw;
+    width: 75vw;
     padding: 20px;
     border: solid 1px white;
     display: flex;
@@ -45,8 +45,21 @@
 .premium{
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 75vw;
     padding: 20px;
     border: solid 1px white;
 }
 
+@media (min-width: 1000px) { 
+
+    .abonnement{
+        height: 100vh;
+    }
+    .abonnement__choice{
+        flex-direction: row;
+    }
+    
+    .freemium, .premium{
+        width: 35vw;
+    }
+}

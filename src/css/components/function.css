@@ -7,7 +7,7 @@
     align-items: center;
 }
 .dotted-design{
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 10px;
     position: absolute;
@@ -59,10 +59,8 @@
 .function__content .function__txt{
     width: 35vw;
 }
-.function__demo img{
-    max-width: 35vw;
-    height: auto;
-    max-height: 80vh;
+.function img{
+    display: none;
 }
 
 .function2 .dot{
@@ -73,7 +71,7 @@
 }
 
 .function2 .dotted-design{
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 10px;
     position: absolute;
@@ -106,4 +104,17 @@
 
 .function3 .dot{
     background-color: var(--brand-orange);
+}
+
+
+@media (min-width: 1000px) {
+    .dotted-design, .function2 .dotted-design{
+        display: flex;
+    }
+    .function img{
+        max-width: 35vw;
+        height: auto;
+        max-height: 80vh; 
+        display: block;
+    }
 }

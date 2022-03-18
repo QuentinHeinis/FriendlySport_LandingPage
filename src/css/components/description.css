@@ -1,9 +1,9 @@
 .product__description{
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
 }
 
 .productimg{
@@ -13,8 +13,9 @@
 }
 
 .description__txt{
-    width: 30vw;
-    height: 60vh;
+    min-width: 30vw;
+    max-width: 80vw;
+    max-height: 60vh;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -36,4 +37,14 @@
 
 .description__title{
     text-align: center;
+}
+
+@media (min-width: 1000px) {
+    .product__description{
+        flex-direction: row;
+    }
+    .description__txt{
+        width: 30vw;
+        height: 60vh;
+    }
 }

@@ -15,6 +15,9 @@
 .header__list {
     list-style: none;
     display: flex;
+    flex-direction: column;
+    position: absolute;
+    visibility: hidden;
     padding: 0;
     justify-content: space-around;
     gap: 40px;
@@ -54,3 +57,13 @@
     color: black;
 }
 
+@media (min-width: 1000px) {
+    .header__list{
+        flex-direction: row;
+        visibility: visible;
+        position: relative;
+    }
+    .header__burger{
+        display: none;
+    }
+}

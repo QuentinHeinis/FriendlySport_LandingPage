@@ -34,3 +34,7 @@
 .hero__title .hero__title--line strong{
     color: var(--brand-orange);
 }
+
+@media (min-width: 1000px) {
+    
+}
