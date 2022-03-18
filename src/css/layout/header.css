@@ -16,11 +16,23 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
+    background-color: var(--gray-black);
+    z-index: 10;
     visibility: hidden;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     padding: 0;
+    margin: 0;
     justify-content: space-around;
+    align-items: center;
     gap: 40px;
+    transform: translate(100%);
+    
+    transition: all .8s ease;
 }
 
 .header__link{
@@ -34,6 +46,10 @@
 .header__logo{
     height: 60px;
     position: relative;
+    left: -40px;
+}
+.logo__run{
+    display: none;
 }
 
 .header__list .list__component{
@@ -57,13 +73,71 @@
     color: black;
 }
 
+.header__burger{
+width: 34px;
+height: 3px;
+display: block;
+background-color: white;
+position: relative;
+z-index: 100;
+border-radius: 20px;
+}
+.header__burger::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    border-radius: 20px;
+    top: -10px;
+    display: block;
+}
+.header__burger::after{
+    content: '';
+    width: 70%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    border-radius: 20px;
+    display: block;
+}
+.header__burger, .header__burger::after, .header__burger::before{
+    transition: all .8s ease;
+}
+.header__toggle{
+    transform: translate(0);
+    visibility: visible;
+    opacity: 1;
+}
+.header__burger--open .header__burger,.header__burger--open .header__burger::after, .header__burger--open .header__burger::before {
+    width: 34px;
+    transform: rotate(135deg);
+}
+.header__burger--open .header__burger::after, .header__burger--open .header__burger::before{
+    transform: rotate(90deg);
+    top: 0;
+}
 @media (min-width: 1000px) {
     .header__list{
+        display: flex;
         flex-direction: row;
         visibility: visible;
         position: relative;
+        background-color: transparent;
+        transform: translate(0);
+        visibility: visible;
+        opacity: 1;
     }
     .header__burger{
         display: none;
     }
+    
+    .header__logo{
+        left: 0;
+    }
+    .logo__run{
+        display: block;
+    }
+    
 }
