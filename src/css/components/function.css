@@ -57,7 +57,10 @@
     gap: 30px;
 }
 .function__content .function__txt{
-    width: 35vw;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
 }
 .function img{
     display: none;
@@ -116,5 +119,9 @@
         height: auto;
         max-height: 80vh; 
         display: block;
+    }
+    
+    .function__content .function__txt{
+        width: 35vw;
     }
 }
