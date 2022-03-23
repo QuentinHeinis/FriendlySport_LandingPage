@@ -73,7 +73,13 @@
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
     font-weight: lighter;
+    
 }
+
+.footer__contact a{
+    color: white;
+}
+
 .footer__legal{
     height: fit-content;
 }
