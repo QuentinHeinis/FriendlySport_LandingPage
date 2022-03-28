@@ -44,3 +44,23 @@ h3{
 .noscroll body {
   overflow: hidden;
 }
+
+
+.middle__screen{
+  margin-top: 27px;
+  position: static;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.topleft svg{
+  position: fixed;
+  display: flex;
+  top: 65px;
+  left: 10vw;
+}
+
+.CGU__container{
+  padding: 20px;
+}

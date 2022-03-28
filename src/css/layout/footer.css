@@ -87,6 +87,11 @@
     height: fit-content;
 }
 
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
 @media (min-width: 1000px){
     .footer{
         height: 50vh;
