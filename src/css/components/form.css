@@ -1,0 +1,42 @@
+.inscription__form{
+    position: absolute;
+    width: min(66vw, 1000px);
+    top: 55%; left: 50%; transform: translate(-50%, -50%);
+    border: solid 3px white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 30px;
+}
+
+.inscription__form > input{
+    width: min(60vw, 800px);
+    height: 36px;
+    position: relative;
+}
+
+.inscription__form > label{
+    width: min(60vw, 800px);
+    margin-top: -20px;
+}
+
+.inscription__form > input:first-child::before{
+    content: url('../../../public/icones/Icon-form.svg');
+    width: 10px;
+    height: 10px;
+    display: flex;
+    position: absolute;
+    top: -300%;
+}
+
+.form__btn{
+    color: var(--gray-black);
+    text-decoration: none;
+    background-color: white;
+    font-family: 'Staatliches', cursive;
+    padding: 12px 38px;
+    border-radius: 30px;
+    border: solid 2px white;
+}
